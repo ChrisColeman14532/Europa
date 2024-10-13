@@ -1,2 +1,2 @@
 # Europa
-Europa Engine - From Cherno Web Series
+Europa Engine - From Cherno Game Engine Series
