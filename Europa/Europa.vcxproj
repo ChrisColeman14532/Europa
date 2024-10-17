@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\Europa\Log.h" />
     <ClInclude Include="source\Europa.h" />
     <ClInclude Include="source\Europa\Application.h" />
     <ClInclude Include="source\Europa\Core.h" />
     <ClInclude Include="source\Europa\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\Europa\Log.cpp" />
     <ClCompile Include="source\Europa\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -121,6 +123,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ER_PLATFORM_WINDOWS;ER_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Europa\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,6 +138,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ER_PLATFORM_WINDOWS;ER_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Europa\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
